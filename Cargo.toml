@@ -1,0 +1,14 @@
+[package]
+name = "alice-mqtt"
+version = "1.0.1"
+edition = "2021"
+license = "LicenseRef-Proprietary"
+publish = false
+authors = ["Moroya Sakamoto"]
+description = "Lightweight PubSub protocol — IoT messaging optimized via topic tree SDF search"
+keywords = ["mqtt", "pubsub", "iot", "messaging", "broker"]
+categories = ["network-programming", "embedded"]
+repository = "https://github.com/ext-sakamoro/ALICE-MQTT"
+
+[dependencies]
+alice-serial = { git = "https://github.com/ext-sakamoro/ALICE-Serial", rev = "16b34ebcaf3a195fe6500defb4d1e6002cb3d09d", version = "0.2" }
