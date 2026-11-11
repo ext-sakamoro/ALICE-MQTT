@@ -8,4 +8,5 @@
 
 ### Changed
 
+- 依存 `alice-serial` を rev 16b34eb の固定から ALICE-Serial の `branch = "main"` + version 0.2 に替えた (同じ commit、同じ crate の 2 つ目の世代を作らない)
 - Licence: `MIT` → `LicenseRef-Proprietary`
