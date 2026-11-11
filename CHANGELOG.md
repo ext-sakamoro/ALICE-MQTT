@@ -8,6 +8,6 @@
 
 ### Changed
 
-- CI: package-integrity (dispatch の時だけ走る) の `cargo package` + 展開 build を ALICE-Law の共有 file `scripts/package_integrity.py` (と `alice_siblings_check.py` / `id_move_check.py` / `release_baseline.py`、試験 `test_package_integrity.py`) に替えた git の main branch から取る `alice-serial` (crates.io に無い 0.2) は blocked と名指し、解決した commit で build する (素の `cargo package` は crates.io で 0.2 を探して失敗していた)
+- CI: package-integrity (dispatch の時だけ走る) の `cargo package` + 展開 build を ALICE-Law の共有 file `scripts/package_integrity.py` (と `alice_siblings_check.py` / `id_move_check.py` / `release_baseline.py`、試験 `test_package_integrity.py`) に替えた git の main branch から取る `alice-serial` (crates.io に無い 0.2) は blocked と名指し、解決した commit で build する (素の `cargo package` は crates.io で 0.2 を探して失敗していた) Cargo.lock を追跡する (.gitignore から外した): package_integrity.py は git の main branch から取る alice-serial の commit を Cargo.lock から読む
 - 依存 `alice-serial` を rev 16b34eb の固定から ALICE-Serial の `branch = "main"` + version 0.2 に替えた (同じ commit、同じ crate の 2 つ目の世代を作らない)
 - Licence: `MIT` → `LicenseRef-Proprietary`
